@@ -1,13 +1,13 @@
 import { Container } from 'reactstrap';
-import DisplayHeader from '../display/DisplayHeader';
 import DisplayList from '../display/DisplayList';
+import FrontDisplay from '../display/FrontDisplay';
 
 const HomePage = () => {
     return (
-        <Container>
-            <DisplayHeader />
+        <>
+            <FrontDisplay />
             <DisplayList />
-        </Container>
+        </>
     );
 }
 
