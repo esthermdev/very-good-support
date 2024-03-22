@@ -1,12 +1,15 @@
-import { Container } from 'reactstrap';
-import DisplayList from '../display/DisplayList';
-import FrontDisplay from '../display/FrontDisplay';
+import TherapyServices from '../components/HomePage/TherapyServices';
+import BottomDisplay from '../components/HomePage/BottomDisplay';
+import TopDisplay from '../components/HomePage/TopDisplay';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
     return (
         <>
-            <FrontDisplay />
-            <DisplayList />
+            <TopDisplay />
+            <TherapyServices />
+            <BottomDisplay />
+            <Footer />
         </>
     );
 }
