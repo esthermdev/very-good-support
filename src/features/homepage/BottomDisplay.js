@@ -7,7 +7,7 @@ import { Container,
          CarouselCaption
     } from 'reactstrap';
 import { useState } from 'react';
-import { selectAllTherapies } from '../../features/therapy-styles/therapySlice.js';
+import { selectAllTherapies } from '../therapy-styles/therapySlice.js';
 
 const BottomDisplay = () => {
     const therapies = selectAllTherapies();
@@ -64,7 +64,7 @@ const BottomDisplay = () => {
                     <Col lg={6} className='ml-2' style={{ fontSize: '1.1rem' }}>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies sem at laoreet dignissim. Nam ullamcorper orci non neque maximus, vel ornare odio porttitor. Etiam augue ante, pulvinar a leo quis, eleifend ullamcorper est. Fusce dapibus felis id maximus venenatis. Etiam ornare eleifend ex eu vestibulum. Maecenas non accumsan risus.</p>
                         <br/>
-                        <p>Phasellus volutpat nulla sit amet tincidunt faucibus. Vivamus pharetra laoreet semper. Etiam at augue ut neque finibus molestie. Curabitur et mollis arcu. Aenean quam arcu, sagittis non accumsan at, venenatis ut metus. Phasellus eros lacus, fermentum id scelerisque a, luctus quis leo. Vestibulum eu mi tortor. Etiam congue sollicitudin eros, et bibendum nisl fermentum sit amet.</p>
+                        <p>Phasellus volutpat nulla sit amet tincidunt faucibus. Vivamus pharetra laoreet semper. Etiam at augue ut neque finibus molestie. Curabitur et mollis arcu. </p>
                     </Col>
                 </Row>
             </Container>

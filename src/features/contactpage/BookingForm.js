@@ -77,7 +77,7 @@ const BookingForm = () => {
                 </FormGroup>
 
                 <FormGroup row className="justify-content-center">
-                    <Col lg='5' className='mt-3 text-end'>
+                    <Col lg='5' className='mt-2 text-end'>
                         <Label check>
                             <Field 
                                 name='agree'

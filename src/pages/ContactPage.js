@@ -2,40 +2,36 @@ import { Container, Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareInstagram, faSquareFacebook, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import BookingForm from '../components/ContactPage/BookingForm';
+import BookingForm from '../features/contactpage/BookingForm.js'
 
 const ContactPage = () => {
     return (
-        <Container className='mt-5'>
+        <Container>
             <Row>
-                <Col md={5} lg={4} style={{ marginTop: '50px' }}>
+                <Col className='mt-5' md={5} lg={4}>
                     <h1>Book an appointment.</h1>
                     <p style={{ width: '90%' }}>Arcu semper urna diam arcu tristique scelerisque fringilla tincidunt elit feugiat.</p>
                     <br />
                     <Row>
-                        <Col xs='auto' className='mt-2'>
-                            <FontAwesomeIcon icon={faPhone} size='2x'/>
-                        </Col>
-                        <Col>
-                        <div>
-                            <h5>Give me a call</h5>
-                            <h5><strong>012-345-6789</strong></h5>
-                        </div>
+                        <Col xs='auto' className='d-flex'>
+                            <FontAwesomeIcon icon={faPhone} className='mt-1' size='lg'/>
+                            <div className='mx-3 align-items-center'>
+                                <h6>Give me a call</h6>
+                                <h5><strong>012-345-6789</strong></h5>
+                            </div>
                         </Col>
                     </Row>
                     <br />
                     <Row>
-                        <Col xs='auto' className='mt-2'>
-                            <FontAwesomeIcon icon={faEnvelope} size='2x'/>  
-                        </Col>
-                        <Col>
-                        <div>
-                            <h5>Send me a message</h5>
-                            <h5><strong>xxx@example.com</strong></h5>
-                        </div>
+                        <Col xs='auto' className='d-flex'>
+                            <FontAwesomeIcon icon={faEnvelope} className='mt-1' size='lg' />  
+                            <div className='mx-3 align-items-center'>
+                                <h6>Send me a message</h6>
+                                <h5><strong>xxx@example.com</strong></h5>
+                            </div>
                         </Col>
                     </Row>                 
-                    <hr style={{ width: '80%' }} />
+                    <hr style={{ width: '90%' }} />
                     <h3>Follow me on</h3>
                     <p style={{ width: '90%' }}>Arcu semper urna diam arcu tristique scelerisque fringilla tincidunt elit feugiat.</p>
                     <a href='http://instagram.com/'>
@@ -48,7 +44,7 @@ const ContactPage = () => {
                         <FontAwesomeIcon icon={faTelegram} className='mt-2' size='2x'/>
                     </a>
                 </Col>
-                <Col md={7} lg={8} className='booking-form'>
+                <Col md={7} lg={8} className='my-5 booking-form'>
                     <BookingForm />
                 </Col>
             </Row>
