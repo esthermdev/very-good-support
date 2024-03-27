@@ -7,7 +7,7 @@ import { Container,
          CarouselCaption
     } from 'reactstrap';
 import { useState } from 'react';
-import { selectAllTherapies } from '../therapy-styles/therapySlice.js';
+import { selectAllTherapies } from '../therapy/therapySlice.js';
 
 const BottomDisplay = () => {
     const therapies = selectAllTherapies();

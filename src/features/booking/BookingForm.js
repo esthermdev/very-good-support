@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { Button, Label, Col, FormGroup } from 'reactstrap';
-import 'react-datepicker/dist/react-datepicker.css';
+import { validateBookingForm } from '../../utils/validateBookingForm';
 
 
 const BookingForm = () => {
@@ -26,6 +26,7 @@ const BookingForm = () => {
                 period: 'AM'
             }}
             onSubmit={handleSubmit}
+            validate={validateBookingForm}
         >
             <Form>
 
@@ -39,6 +40,9 @@ const BookingForm = () => {
                             placeholder='First Name'
                             className='form-control'    
                         />
+                        <ErrorMessage name='firstName'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage>
                     </Col>
                     <Col lg='5'>
                         <Label htmlFor='lastName'>
@@ -49,6 +53,9 @@ const BookingForm = () => {
                             placeholder='Last Name'
                             className='form-control'    
                         />
+                        <ErrorMessage name='lastName'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage>
                     </Col>
                 </FormGroup>
 
@@ -63,6 +70,9 @@ const BookingForm = () => {
                             placeholder='example@email.com'
                             className='form-control'    
                         />
+                        <ErrorMessage name='email'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage>
                     </Col>
                     <Col lg='5'>
                         <Label htmlFor='phoneNumber'>
@@ -73,6 +83,9 @@ const BookingForm = () => {
                             placeholder='123-321-1234'
                             className='form-control'    
                         />
+                        <ErrorMessage name='phoneNumber'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage>
                     </Col>
                 </FormGroup>
 

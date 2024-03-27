@@ -1,6 +1,6 @@
-import TherapyServices from '../features/therapy-styles/TherapyServices';
-import BottomDisplay from '../features/homepage/BottomDisplay';
-import TopDisplay from '../features/homepage/TopDisplay';
+import TherapyServices from '../features/therapy/TherapyServices';
+import BottomDisplay from '../features/display/BottomDisplay';
+import TopDisplay from '../features/display/TopDisplay';
 import Footer from '../components/Footer';
 
 const HomePage = () => {

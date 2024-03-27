@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareInstagram, faSquareFacebook, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import BookingForm from '../features/contactpage/BookingForm.js'
+import BookingForm from '../features/booking/BookingForm.js'
 
 const ContactPage = () => {
     return (
