@@ -8,21 +8,24 @@ import {
     NavItem,
     Button
 } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
 import SupportLogo from '../app/assets/logo_placeholder.png';
+import { NavLink } from 'react-router-dom';
+import UserLoginForm from '../features/user/UserLoginForm';
+
+
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Navbar style={{ borderBottom: '3px solid bisque', }} dark color="info" sticky="top" expand="lg">
+        <Navbar style={{ borderBottom: '3px solid bisque', backgroundColor: "#008080"}} dark sticky="top" expand="lg">
             <NavbarBrand className='ms-2' href='/' style={{ display: 'inline-flex', alignItems: 'center', height: 80 }}>
-                <img src={SupportLogo} alt="support logo" style={{ height: 50, width: 50 }} />
-                <h2 style={{ marginBottom: 0 }}>Very Good Support</h2>
+                <img src={SupportLogo} alt="support logo" style={{ height: 60, width: 60 }} />
+                <h2 className='m-2' style={{ marginBottom: 0 }}>Very Good Support</h2>
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
-                <Nav className='ms-auto' navbar>
+                <Nav className='navlinks ms-auto' navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
                             Home
@@ -39,9 +42,10 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                 </Nav>
-                <Button href='/contact' className='m-3' color='primary' outline >
+                <Button href='/contact' className='m-3' color='light' outline >
                     Book an Appointment
                 </Button>
+                <UserLoginForm />
             </Collapse>
         </Navbar>
     );

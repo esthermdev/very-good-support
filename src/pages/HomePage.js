@@ -1,14 +1,25 @@
-import TherapyServices from '../features/therapy/TherapyServices';
-import BottomDisplay from '../features/display/BottomDisplay';
-import TopDisplay from '../features/display/TopDisplay';
+import { Container } from 'reactstrap';
+import frontImage from '../app/assets/random-background.jpg'
+import CarouselDisplay from '../features/display/CarouselDisplay'
 import Footer from '../components/Footer';
+import TherapyCards from '../features/therapy/TherapyCards';
 
 const HomePage = () => {
+
+    const imageStyle = {
+        width: '100%',
+        height: '500px',
+        objectFit: 'cover',
+        borderBottom: '3px solid bisque'
+    };
+
     return (
         <>
-            <TopDisplay />
-            <TherapyServices />
-            <BottomDisplay />
+            <Container fluid={true} className='p-0'>
+                <img style={imageStyle} src={frontImage} alt='background image placeholder'></img>
+            </Container>
+            <TherapyCards />
+            <CarouselDisplay />
             <Footer />
         </>
     );

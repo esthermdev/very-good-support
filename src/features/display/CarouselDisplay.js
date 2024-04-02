@@ -9,7 +9,7 @@ import { Container,
 import { useState } from 'react';
 import { selectAllTherapies } from '../therapy/therapySlice.js';
 
-const BottomDisplay = () => {
+const CarouselDisplay = () => {
     const therapies = selectAllTherapies();
 
     const [activeIndex, setActiveIndex] = useState(0);
@@ -72,4 +72,4 @@ const BottomDisplay = () => {
     );
 }
 
-export default BottomDisplay;
+export default CarouselDisplay;

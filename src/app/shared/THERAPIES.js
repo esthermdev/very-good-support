@@ -1,24 +1,36 @@
-import imageOne from '../assets/image1.jpg';
-import imageTwo from '../assets/image2.jpg';
-import imageThree from '../assets/image3.jpg';
+import articulationImage from '../assets/image1.jpg';
+import fluencyImage from '../assets/image2.jpg';
+import voiceImage from '../assets/image3.jpg';
 
 export const THERAPIES = [
     {
         id: 0,
-        name: "Therapy type one",
-        image: imageOne,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras. Amet dictum sit amet justo donec enim diam. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Quisque sagittis purus sit amet volutpat consequat. Consectetur adipiscing elit duis tristique sollicitudin."
+        name: "Articulation Therapy",
+        image: articulationImage,
+        description: "Articulation therapy focuses on improving the clarity and precision of speech sounds. It helps individuals produce sounds correctly by targeting specific articulators such as the lips, tongue, and palate.",
+        techniques: ["Phonetic placement", "Minimal pairs therapy", "Drill practice"],
+        benefits: ["Improved speech intelligibility", "Enhanced communication skills", "Increased confidence in speaking"],
+        duration: "Varies depending on severity, typically 30-60 minutes per session",
+        cost: "Approximately $75-$150 per session"
     },
     {
         id: 1,
-        name: "Therapy type two",
-        image: imageTwo,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing. Velit laoreet id donec ultrices tincidunt. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Nisl purus in mollis nunc sed id. Dui sapien eget mi proin sed libero enim."
+        name: "Fluency Therapy",
+        image: fluencyImage,
+        description: "Fluency therapy aims to improve the flow of speech by addressing stuttering or other fluency disorders. It includes strategies to reduce stuttering behaviors and enhance smooth, effortless speech production.",
+        techniques: ["Slow speech techniques", "Breath regulation exercises", "Desensitization to speaking situations"],
+        benefits: ["Reduced stuttering frequency", "Increased speech fluency", "Improved overall communication"],
+        duration: "Typically 45-60 minutes per session, frequency varies",
+        cost: "Approximately $80-$200 per session"
     },
     {
         id: 2,
-        name: "Therapy type three",
-        image: imageThree,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet nulla malesuada pellentesque elit eget gravida. Malesuada pellentesque elit eget gravida cum. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Faucibus et molestie ac feugiat."
+        name: "Voice Therapy",
+        image: voiceImage,
+        description: "Voice therapy focuses on improving the quality, resonance, and projection of the voice. It addresses vocal disorders such as hoarseness, pitch problems, and vocal fatigue through exercises and techniques.",
+        techniques: ["Vocal exercises", "Resonance therapy", "Vocal hygiene education"],
+        benefits: ["Improved vocal quality", "Enhanced vocal endurance", "Reduced vocal strain and fatigue"],
+        duration: "Varies depending on the severity and type of voice disorder, typically 45-60 minutes per session",
+        cost: "Approximately $90-$180 per session"
     },
 ];
