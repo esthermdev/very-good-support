@@ -1,5 +1,5 @@
 # Very Good Support
----
+
 ## Overview
 
 This project is a React-based web application designed to facilitate speech therapists in managing their therapy services effectively. It provides a user-friendly platform for therapists to connect with clients, schedule appointments, and maintain communication seamlessly.
