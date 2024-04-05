@@ -9,8 +9,6 @@ import { Container,
     } from 'reactstrap';
 import { useState } from 'react';
 import { selectAllTherapies } from '../therapy/therapiesSlice.js';
-import Error from '../../components/Error.js';
-import Loading from '../../components/Loading.js';
 
 const CarouselTherapiesDisplay = () => {
     const therapies = useSelector(selectAllTherapies);
@@ -46,40 +44,24 @@ const CarouselTherapiesDisplay = () => {
         );
     })
 
-    const isLoading = useSelector((state) => state.therapies.isLoading);
-    const errMsg = useSelector((state) => state.therapies.errMsg);
-    let content = null;
-
-    if (isLoading) {
-        content = <Loading />
-    } else if (errMsg) {
-        content = <Error errMsg={errMsg} />
-    } else {
-        content = (
-            <>
-                <Col lg={6}>
-                    <Carousel 
-                        activeIndex={activeIndex} 
-                        next={next} 
-                        previous={previous}
-                    >
-                        <CarouselIndicators 
-                            items={therapies} 
-                            activeIndex={activeIndex} 
-                            onClickHandler={(index) => setActiveIndex(index)}
-                        />
-                        {slides}
-                    </Carousel>
-                </Col>
-            </>
-        );
-    }
-
     return (
         <div className='end-display'>
             <Container className='py-5 px-5'>
                 <Row className='gx-5 gy-5'>
-                    {content}
+                    <Col lg={6}>
+                        <Carousel 
+                            activeIndex={activeIndex} 
+                            next={next} 
+                            previous={previous}
+                        >
+                            <CarouselIndicators 
+                                items={therapies} 
+                                activeIndex={activeIndex} 
+                                onClickHandler={(index) => setActiveIndex(index)}
+                            />
+                            {slides}
+                        </Carousel>
+                    </Col>
                     <Col lg={6} className='ml-2' style={{ fontSize: '1.1rem' }}>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies sem at laoreet dignissim. Nam ullamcorper orci non neque maximus, vel ornare odio porttitor. Etiam augue ante, pulvinar a leo quis, eleifend ullamcorper est. Fusce dapibus felis id maximus venenatis. Etiam ornare eleifend ex eu vestibulum. Maecenas non accumsan risus.</p>
                         <br/>
