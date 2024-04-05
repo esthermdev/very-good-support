@@ -1,6 +1,8 @@
 import { useSelector } from 'react-redux';
 import { Container, Row, Col } from 'reactstrap';
 import { selectAllTherapies } from './therapiesSlice';
+import Error from '../../components/Error';
+import Loading from '../../components/Loading';
 
 const TherapyCards = () => {
 
@@ -13,6 +15,25 @@ const TherapyCards = () => {
         } else {
             return description;
         }
+    }
+
+    const isLoading = useSelector((state) => state.therapies.isLoading);
+    const errMsg = useSelector((state) => state.therapies.errMsg);
+
+    if (isLoading) {
+        return (
+            <Row className='text-center m-5'>
+                <Loading />
+            </Row>
+        );
+    }
+
+    if (errMsg) {
+        return (
+            <Row className='text-center m-5'>
+                <Error errMsg={errMsg} />
+            </Row>
+        );
     }
 
     return (
