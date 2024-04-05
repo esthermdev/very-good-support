@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import { Container,
          Row, 
          Col, 
@@ -7,10 +8,10 @@ import { Container,
          CarouselCaption
     } from 'reactstrap';
 import { useState } from 'react';
-import { selectAllTherapies } from '../therapy/therapySlice.js';
+import { selectAllTherapies } from '../therapy/therapiesSlice.js';
 
-const CarouselDisplay = () => {
-    const therapies = selectAllTherapies();
+const CarouselTherapiesDisplay = () => {
+    const therapies = useSelector(selectAllTherapies);
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
@@ -72,4 +73,4 @@ const CarouselDisplay = () => {
     );
 }
 
-export default CarouselDisplay;
+export default CarouselTherapiesDisplay;

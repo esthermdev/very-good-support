@@ -13,6 +13,7 @@ const BookingForm = () => {
 
     return (
         <Formik
+            
             initialValues={{
                 firstName: '',
                 lastName: '',
@@ -22,14 +23,13 @@ const BookingForm = () => {
                 contactType: '',
                 messageField: '',
                 date: new Date(),
-                time: '',
-                period: 'AM'
+                time: ''
             }}
             onSubmit={handleSubmit}
             validate={validateBookingForm}
         >
             <Form>
-
+                
                 <FormGroup row className="justify-content-center">
                     <Col lg='5'>
                         <Label htmlFor='firstName'>

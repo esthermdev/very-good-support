@@ -1,9 +1,10 @@
+import { useSelector } from 'react-redux';
 import { Container, Row, Col } from 'reactstrap';
-import { selectAllTherapies } from './therapySlice';
+import { selectAllTherapies } from './therapiesSlice';
 
 const TherapyCards = () => {
 
-    const therapies = selectAllTherapies();
+    const therapies = useSelector(selectAllTherapies);
 
     const shortDescription = (description) => {
         const words = description.split(' ');

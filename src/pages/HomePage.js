@@ -1,6 +1,6 @@
 import { Container } from 'reactstrap';
 import frontImage from '../app/assets/random-background.jpg'
-import CarouselDisplay from '../features/display/CarouselDisplay'
+import CarouselTherapiesDisplay from '../features/display/CarouselTherapiesDisplay'
 import Footer from '../components/Footer';
 import TherapyCards from '../features/therapy/TherapyCards';
 
@@ -19,7 +19,7 @@ const HomePage = () => {
                 <img style={imageStyle} src={frontImage} alt='background image placeholder'></img>
             </Container>
             <TherapyCards />
-            <CarouselDisplay />
+            <CarouselTherapiesDisplay />
             <Footer />
         </>
     );
