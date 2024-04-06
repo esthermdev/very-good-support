@@ -36,7 +36,7 @@ To run this project locally, follow these steps:
     
 2. Navigate to the project directory:
 	
-	`cd very-good-support
+	`cd very-good-support`
 	
 1. Install dependencies:
     
