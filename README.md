@@ -11,7 +11,7 @@ This project was deployed using Firebase on Google Cloud, and is accessible [her
 ## Key Features
 
 #### - Homepage
-The homepage serves as the entry point to your website, providing an initial impression of your speech therapy services. It prominently displays a background image with essential information overlayed.
+The homepage serves as the entry point to your website, providing an initial impression of your speech therapy services. It prominently displays a background image with essential information overlayed. (Note: "More info" buttons are not working as detailed pages have yet to be created).
 #### - Book an Appointment (Contact Page)
 The contact page facilitates communication between therapists and potential clients, enabling them to book appointments and inquire about services.
 #### - Login (modal only)
