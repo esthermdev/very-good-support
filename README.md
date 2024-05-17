@@ -4,10 +4,6 @@
 
 This project is a React-based web application designed to facilitate speech therapists in managing their therapy services effectively. It provides a user-friendly platform for therapists to connect with clients, schedule appointments, and maintain communication seamlessly.
 
-## Deployment
-
-This project was deployed using Firebase on Google Cloud, and is accessible [here](https://very-good-support-v1.web.app/).
-
 ## Key Features
 
 #### - Homepage
